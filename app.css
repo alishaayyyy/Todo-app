@@ -1,0 +1,137 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f4f4f9; /* Light background color */
+  color: #333; /* Text color */
+  margin: 0;
+  padding: 20px;
+}
+
+/* Heading */
+h1 {
+  color: orchid; /* Green color */
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+/* Container Styles */
+.container {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Input Field */
+input {
+  padding: 10px;
+  width: 300px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  outline: none;
+}
+
+input:focus {
+  border-color: #4CAF50; /* Green border when focused */
+}
+
+/* Button Styles */
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* Button for Delete All */
+button:nth-of-type(2) {
+  background-color: #f44336; /* Red for the Delete All button */
+}
+
+button:nth-of-type(2):hover {
+  background-color: #e53935; /* Darker red on hover */
+}
+
+/* Task List Styles */
+ul {
+  list-style-type: none;
+  padding: 0;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Individual Task List Item */
+li {
+  background-color: #fff;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 1.2em;
+}
+
+/* Button Styles Inside List Items */
+li button {
+  padding: 5px 10px;
+  margin-left: 10px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+li button.edit {
+  background-color: blueviolet;
+  color: white;
+}
+
+li button.delete {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Hover Effects for Task Buttons */
+li button:hover {
+  opacity: 0.8;
+}
+
+li button.edit:hover {
+  background-color: darkviolet;
+}
+
+li button.delete:hover {
+  background-color: #e53935;
+}
+
+/* Responsive Styling */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  input {
+    width: 80%;
+  }
+
+  button {
+    width: 40%;
+  }
+
+  li {
+    font-size: 1em;
+  }
+}
